@@ -20,7 +20,7 @@ public class ChooseYourOwnAdventure
     String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
     if ("wake up".equalsIgnoreCase(action))
     {
-      wakeUp();
+      wakeUp1();
     }
     else if ("explore".equalsIgnoreCase(action))
     {
@@ -76,22 +76,19 @@ public class ChooseYourOwnAdventure
     //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
     String action = askAQuestion("Do you want to train to be a ninja 'Yes' or 'Heck Yes'?");
     //               If they answer "yes" --#13.1
-     if{
-     answer = yes || heck yes
-         {MessageBox.showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" );
-         }
-      
-      
-      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-      //               Otherwise, if they answer "heck yes" --#13.2
-      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-      //               Otherwise, if they answer anything else --#13.3
-      //                    endStory --#16
-      //            ------------- End of pourIntoToilet recipe --#12.3
-      
+    if ("yes".equalsIgnoreCase(action) || "heck yes".equalsIgnoreCase(action))
+    {
+      MessageBox
+          .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
     }
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+    //               Otherwise, if they answer "heck yes" --#13.2
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+    //               Otherwise, if they answer anything else --#13.3
+    //                    endStory --#16
+    //            ------------- End of pourIntoToilet recipe --#12.3
   }
-  private static void wakeUp()
+  private static void wakeUp1()
   {
     MessageBox.showMessage("You wake up to your horrible life");
   }
