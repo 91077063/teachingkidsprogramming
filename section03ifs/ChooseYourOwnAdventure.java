@@ -47,16 +47,7 @@ public class ChooseYourOwnAdventure
       //            pourIntoToilet (recipe below) --#12.1
       //            ------------- Recipe for pourIntoToilet --#12.2
       //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
-      MessageBox.showMessage(
-          "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-      //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
-      //               If they answer "yes" --#13.1
-      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-      //               Otherwise, if they answer "heck yes" --#13.2
-      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-      //               Otherwise, if they answer anything else --#13.3
-      //                    endStory --#16
-      //            ------------- End of pourIntoToilet recipe --#12.3
+      pourIntoToilet();
       //         Otherwise, if they answer "backyard" --#8.2
     }
     //            pourIntoBackyard (recipe below) --#19.1
@@ -71,12 +62,34 @@ public class ChooseYourOwnAdventure
     //                    endStory --#23
     //         ------------- End of pourIntoBackyard recipe --#19.3
     //         Otherwise, if they answer anything else --#8.3
-    if ("backyard".equalsIgnoreCase(action))
+    if (!"backyard".equalsIgnoreCase(action))
     {
       endStory();
     }
     //            endStory --#9
     //      ------------- End of approachOoze recipe --#4.3
+  }
+  private static void pourIntoToilet()
+  {
+    MessageBox.showMessage(
+        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
+    //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
+    String action = askAQuestion("Do you want to train to be a ninja 'Yes' or 'Heck Yes'?");
+    //               If they answer "yes" --#13.1
+     if{
+     answer = yes || heck yes
+         {MessageBox.showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" );
+         }
+      
+      
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+      //               Otherwise, if they answer "heck yes" --#13.2
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+      //               Otherwise, if they answer anything else --#13.3
+      //                    endStory --#16
+      //            ------------- End of pourIntoToilet recipe --#12.3
+      
+    }
   }
   private static void wakeUp()
   {
