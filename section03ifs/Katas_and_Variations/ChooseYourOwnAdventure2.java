@@ -1,13 +1,14 @@
-package org.teachingkidsprogramming.section03ifs;
+package org.teachingkidsprogramming.section03ifs.Katas_and_Variations;
 
 import java.awt.Color;
 
 import org.teachingextensions.approvals.lite.util.ThreadUtils;
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.Turtle.Animals;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventure2
 {
   public static void main(String[] args)
   {
@@ -65,6 +66,7 @@ public class ChooseYourOwnAdventure
     //                Otherwise, if they answer "scream" --#20.2
     else if ("scream".equalsIgnoreCase(action1))
     {
+      Tortoise.setAnimal(Animals.ExplodedTurtle);
       MessageBox.showMessage("You made a delicious soup! Yum! The end.");
     }
     else
@@ -82,6 +84,11 @@ public class ChooseYourOwnAdventure
       MessageBox
           .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
     }
+    //    if ("no".equalsIgnoreCase(action))
+    //    {
+    //      MessageBox
+    //          .showMessage("Well.. You're are going to live the rest of your life as a .");
+    //    }
   }
   private static void wakeUp()
   {
