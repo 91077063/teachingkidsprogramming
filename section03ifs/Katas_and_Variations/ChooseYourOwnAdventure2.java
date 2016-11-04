@@ -92,7 +92,24 @@ public class ChooseYourOwnAdventure2
   }
   private static void wakeUp()
   {
-    MessageBox.showMessage("You wake up to your horrible life");
+    MessageBox.showMessage("You wake up to your enclosure in Cincinatii Zoo..");
+    String action = askAQuestion(
+        "A child falls into the enclosure.. What do you do? Pick it up? or Leave it Alone?");
+    if ("Pick it up".equalsIgnoreCase(action))
+    {
+      MessageBox.showMessage("You start to drag him around! People start screaming!");
+      MessageBox.showMessage(
+          "The Zoo Keeper shows up and pulls out his gun..you turn around to shelter the child but get shot.");
+      MessageBox.showMessage("BANG! You die. Heros live forever, but legends never die.. Good job.");
+      startStory();
+    }
+    {
+      if ("Leave it alone".equalsIgnoreCase(action))
+      {
+        MessageBox.showMessage("The child eventually gets saved by a firefighter. The end.");
+        endStory();
+      }
+    }
   }
   private static void animateStartStory()
   {
