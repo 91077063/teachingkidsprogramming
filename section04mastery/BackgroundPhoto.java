@@ -7,8 +7,10 @@ public class BackgroundPhoto
   @SuppressWarnings("unused")
   public static void main(String[] args)
   {
-    //  Set the current picture to this url "http://img2.timeinc.net/ew/dynamic/imgs/101110/sonny-cher_240.jpg" --#1.0
+    // String img = "http://img2.timeinc.net/ew/dynamic/imgs/101110/sonny-cher_240.jpg";
     //  Set the background image to the current picture--#1.1
+    Tortoise.getBackgroundWindow()
+        .setBackgroundImage("http://img2.timeinc.net/ew/dynamic/imgs/101110/sonny-cher_240.jpg");
     Tortoise.show();
     Tortoise.setSpeed(10);
     int side = 2;
