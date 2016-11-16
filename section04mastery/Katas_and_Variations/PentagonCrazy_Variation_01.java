@@ -15,19 +15,23 @@ public class PentagonCrazy_Variation_01
     //
     drawPentagon();
   }
-  static int whatever = 0;
   private static void drawPentagon()
   {
-    for (int i = 0; i < 2000; i++)
+    for (int i = 0; i < 1000; i++)
     {
       adjustPen();
       //
-      Tortoise.move(i * 2);
-      Tortoise.turn(360 / 2);
+      Tortoise.move(50);
+      Tortoise.turn(360 / 6);
       Tortoise.turn(1);
-      whatever = i;
     }
-  }
+    for (int i = 0; i < 1000; i++)
+    {
+      adjustPen();
+      Tortoise.move(50);
+      Tortoise.turn(-360 / 6);
+      Tortoise.turn(-1);
+    }
   private static void adjustPen()
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());

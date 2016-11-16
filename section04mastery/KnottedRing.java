@@ -23,8 +23,8 @@ public class KnottedRing
   {
     for (int i = 0; i < 8 + 1; i++)
     {
-      Tortoise.move(110);
-      Tortoise.turn(360 / 8);
+      Tortoise.move(10);
+      Tortoise.turn(360 / 12);
     }
   }
   private static void createColorPalette()
