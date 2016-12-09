@@ -34,7 +34,7 @@ public class SpiderWeb
   }
   private static void drawTriangle(double lineLength)
   {
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
     {
       Tortoise.move(lineLength);
       Tortoise.turn(360 / 6);

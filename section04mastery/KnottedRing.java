@@ -15,7 +15,7 @@ public class KnottedRing
     {
       Tortoise.setPenColor(ColorWheel.getNextColor());
       drawOctagonWithOverLap();
-      Tortoise.turn(360 / 30);
+      Tortoise.turn(360 / 6);
       Tortoise.turn(5);
     }
   }
@@ -24,7 +24,7 @@ public class KnottedRing
     for (int i = 0; i < 8 + 1; i++)
     {
       Tortoise.move(10);
-      Tortoise.turn(360 / 12);
+      Tortoise.turn(360 / 8);
     }
   }
   private static void createColorPalette()
